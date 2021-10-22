@@ -18,8 +18,8 @@ a{
 }
 #navigation{
     background: var(--first-color);
-    /* height: 70px;
-    line-height: 70px; */
+    height: 70px;
+    line-height: 70px;
 }
 .logo{
     color: var(--second-color);
@@ -37,7 +37,9 @@ a{
 .nav-links li a:hover{
     color: var(--second-color)
 }
-
+#navigation i{
+    display: none;
+}
 
 #slider{
     background: rgb(255, 255, 255);
@@ -210,6 +212,8 @@ a{
         position: absolute;
         top: 20px;
         right: 30px;
+        display: block;
+        cursor: pointer;
     }
     #navigation #close{
         display: none;
@@ -218,6 +222,7 @@ a{
         position: fixed;
         top: 20px;
         right: 30px;
+        cursor: pointer;
         z-index: 99999999999;
     }
     .social-links{
